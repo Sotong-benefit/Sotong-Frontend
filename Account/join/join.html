@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+    <title>join-page</title>
+    <link rel="stylesheet" type="text/css" href="join.css">
+</head>
+<style>
+    #join_submitbtn:disabled {
+        background: var(--5, #CECECE);
+        color: #FFF;
+        cursor: default;
+    }
+
+    .pwd_alert {
+        color: var(--unnamed, #FF7474);
+        font-family: Pretendard;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        margin-top: 0.5rem;
+        margin-left: 0.8rem;
+        position: absolute;
+    }
+</style>
+
+<body class="container" style="margin-bottom: 20rem;">
+    <section>
+        <div class=main-logo id=main-logo-bg style="border-radius: 3.125rem;">
+            <img src="/images/main-logo.svg">
+        </div>
+    </section>
+    <section>
+        <form class="form_wrap_line">
+            <div style="margin-bottom: 1.5rem;">
+                <input type="text" class="input-form" id="id" placeholder="이메일을 입력해주세요" name="user-email">
+            </div>
+            <div style="margin-bottom: 1.5rem;">
+                <input type="text" class="input-form" id="name" placeholder="이름을 입력해주세요" name="user-name">
+            </div>
+            <div style="margin-bottom: 1.5rem;">
+                <label for="passwordField" class="password-label">
+                    <input type="password" id="passwordField" class="input-form" placeholder="비밀번호를 입력해주세요"
+                        name="user-pw" required>
+                    <img src="/images/pwd-toggle-show.svg" class="toggle-image1" onclick="togglePasswordVisibility()">
+                </label>
+            </div>
+            <div style="margin-bottom: 2rem;">
+                <label for="passwordCkField" class="password-label">
+                    <input type="password" id="passwordCkField" class="input-form" placeholder="  비밀번호를 다시 입력해주세요"
+                        name="user-checkpw" required>
+                    <img src="/images/pwd-toggle-show.svg" class="toggle-image2"
+                        onclick="togglePasswordCheckVisibility()">
+                </label>
+                <div class="pwd_alert" id="alert-success"></div>
+                <div class="pwd_alert" id="alert-danger">비밀번호가 일치하지 않습니다.</div>
+            </div>
+            <div>
+                <button type="submit" id=join_submitbtn onclick="handleLogin()" disabled>회원가입 하기</button>
+            </div>
+        </form>
+        <div id="move-href" style="text-align: center; margin-top: 2rem;">
+            <span><a href="#">비밀번호 찾기</a></span>
+            <span class="line" style="width: 0.0625rem;
+            height: 1.5rem; color: #CECECE;">|</span>
+            <span><a href="/Account/login/login.html">로그인</a></span>
+        </div>
+    </section>
+
+    <script>
+        const nameForm = document.querySelector("#name");
+        const idForm = document.querySelector("#id");
+        const pwForm = document.querySelector("#passwordField");
+        const check_pwdForm = document.querySelector("#passwordCkField");
+        const joinButton = document.querySelector("#join_submitbtn");
+
+        nameForm.addEventListener("keyup", JoinactiveEvent);
+        idForm.addEventListener('keyup', JoinactiveEvent);
+        pwForm.addEventListener('keyup', JoinactiveEvent);
+        check_pwdForm.addEventListener('keyup', JoinactiveEvent);
+        joinButton.addEventListener('click', JoinactiveEvent);
+
+        function JoinactiveEvent() {
+            switch (!(nameForm.value && idForm.value && pwForm.value && check_pwdForm.value)) {
+                case true: joinButton.disabled = true;
+                    break;
+                case false: joinButton.disabled = false;
+                    break;
+            }
+        }
+    </script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="/Account/check.js"></script>
+    <script src="/Account/account.js"></script>
+</body>
+
+</html>

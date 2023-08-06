@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+    <title>로그인 페이지</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+
+<style>
+    #login_submitbtn:disabled {
+        background: var(--5, #CECECE);
+        color: #FFF;
+        cursor: default;
+    }
+</style>
+
+<body class="container" style="margin-bottom: 20rem;">
+    <section>
+        <div class=main-logo id=main-logo-bg>
+            <img src="/images/main-logo.svg">
+        </div>
+    </section>
+    <section>
+        <form class="form_wrap_line">
+            <div style="margin-bottom: 1.5rem;">
+                <input type="text" class="input-form" id="id" placeholder="이메일을 입력해주세요" name="user-name" style="border: 2px solid var(--unnamed, #FF7474);">
+                <div class="login_alert" id="alert-danger">아이디를 확인해주세요</div>
+            </div>
+            <div style="margin-bottom: 2rem;">
+                <label for="passwordField" class="password-label">
+                    <input type="password" id="passwordField" class="input-form" placeholder="비밀번호를 입력해주세요"
+                        name="user-pw" style="border: 2px solid var(--unnamed, #FF7474);">
+                    <img src="/images/pwd-toggle-show.svg" class="toggle-image1" onclick="togglePasswordVisibility()">
+                    <div class="login_alert" id="alert-danger">비밀번호를 확인해주세요</div>
+                </label>
+            </div>
+            <div>
+                <button type="submit" id=login_submitbtn onclick="handleLogin()" disabled>로그인</button>
+            </div>
+        </form>
+        <div id="move-href" style="text-align: center; margin-top: 2rem;">
+            <span><a href="/Account/find/find.html">비밀번호 찾기</a></span>
+            <span class="line" style="width: 0.0625rem;
+            height: 1.5rem; color: #CECECE;">|</span>
+            <span><a href="/Account/join/join.html">회원가입</a></span>
+        </div>
+    </section>
+
+    <script>
+        const idForm = document.querySelector("#id");
+        const pwForm = document.querySelector("#passwordField");
+        const loginButton = document.querySelector("#login_submitbtn");
+
+        idForm.addEventListener("keyup", LoginactiveEvent);
+        pwForm.addEventListener("keyup", LoginactiveEvent);
+        loginButton.addEventListener("click", LoginactiveEvent);
+
+
+        function LoginactiveEvent() {
+            switch (!(idForm.value && pwForm.value)) {
+                case true:
+                    loginButton.disabled = true;
+                    break;
+                case false:
+                    loginButton.disabled = false;
+                    break;
+            }
+        }
+    </script>
+
+    <script src="/Account/account.js"></script>
+</body>
+
+</html>
