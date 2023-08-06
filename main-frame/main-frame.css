@@ -1,3 +1,4 @@
+/* 메인 프레임 css 시작 */
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css");
 
 :root {
@@ -96,3 +97,5 @@ nav img{
     line-height: normal;
     margin: 4rem;
 }
+
+/* 메인 프레임 css 끝 */
