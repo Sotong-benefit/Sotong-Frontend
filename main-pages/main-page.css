@@ -1,7 +1,11 @@
 /* 혜택 더보기 section */
+html{
+    height: 310.0625rem;
+}
+
 .benefitPlus-wrap {
     background-color: var(--3, #B2EDFF);
-    height: 26.8125rem;
+    height: auto;
     width: 100%;
 }
 
@@ -121,6 +125,9 @@
     right: 0.58rem;
     z-index: 2;
     margin-bottom: 0.58rem;
+    width: 5.61456rem;
+    height: 5.61456rem;
+    flex-shrink: 0;
 }
 
 .today-deadline-content {
@@ -346,7 +353,6 @@ html {
     transition: transform .5s linear;
 }
 
-/* discover btn 호버시 나오는 애니메이션까지 */
 .v-story-wrap .v-story-slider .slider-item>a {
     position: relative;
 }
@@ -396,7 +402,7 @@ html {
     color: #fff;
 }
 
-/* 호버 애니메이션 */
+/* hover 애니메이션 */
 .v-story-wrap .v-story-slider .slick-active .slider-item>a:hover>.discover {
     opacity: 1;
 }
@@ -405,7 +411,7 @@ html {
     transform: rotate(360deg);
 }
 
-/* visual story 내부 텍스트 */
+/*내부 텍스트 */
 .v-story-wrap .v-story-slider .slider-item>.v-story-desc-list {
     margin-top: 26px;
     opacity: 0;
@@ -439,7 +445,7 @@ html {
     transition: opacity .8s .5s, transform .8s .5s;
 }
 
-/* visual story 사이드 버튼 */
+/*사이드 버튼 */
 .v-story-wrap .v-story-slider .slick-arrow {
     z-index: 10;
     top: 185px;
@@ -465,7 +471,7 @@ html {
     font-size: 24px;
 }
 
-/* visual story 하단 페이지 버튼 */
+/*하단 페이지 버튼 */
 .v-story-wrap .v-story-slider .slick-dots>li {
     width: auto;
     height: auto;
@@ -503,7 +509,7 @@ html {
     opacity: 1;
 }
 
-/* 중앙 컨텐츠 3차 visual story 반응형 */
+/*반응형 */
 @media (max-width: 3000px) {
     .v-story-wrap .v-story-tt {
         font-size: 2.2vw;
@@ -537,21 +543,22 @@ html {
 }
 
 /* 신규혜택 보러가기 */
-.view-newBenefits-wrap{
+.view-newBenefits-wrap {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.view-newBenefits{
+.view-newBenefits {
     width: 56.25rem;
     height: 8.9375rem;
     flex-shrink: 0;
     background: var(--grey-0, #F3F3F3);
     margin-top: 12.5rem;
+    position: relative;
 }
 
-.view-newBenefits p{
+.view-newBenefits p {
     color: var(--1, #333);
     font-family: Pretendard;
     font-size: 1.875rem;
@@ -561,20 +568,153 @@ html {
     margin-top: 2.25rem;
     margin-left: 3.5rem;
     margin-bottom: 0;
+    width: 15rem;
 }
 
-.view-newBenefits span{
+.view-newBenefits span {
     color: var(--1, #333);
     font-family: Pretendard;
     font-size: 1.875rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    margin-left:9rem;
+    margin-left: 9rem;
 }
 
-.view-newBenefits > img{
+.view-newBenefits span img {
+    position: absolute;
     width: 1.0625rem;
     height: 1.6875rem;
     flex-shrink: 0;
+    margin-left: 20rem;
+    top: 50%; /* 이미지 수직 중앙에 배치*/
+    transform: translateY(-50%);
+}
+
+/* 소득분위제도란? */
+.income-quintile-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.income-quintile{
+    margin-top: 12.5rem;
+    width: 56.25rem;
+    height: auto;
+    flex-shrink: 0;
+    background: #F1F1F1;
+    text-align: center;
+}
+
+#income-quintile-title{
+    margin: auto;
+    width: 18.9375rem;
+    height: 2.9095rem;
+    border-radius:0 0 0.625rem  0.625rem;
+    background: var(--1, #00C2FF);
+    text-align: center;
+
+    color: var(--unnamed, rgba(255, 255, 255, 0.95));
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 0.5rem;
+    margin-bottom: 4.06rem;
+}
+
+#income-quintile-content{
+    margin: auto;
+    width: 48rem;
+    height: 10.3125rem;
+    flex-shrink: 0;
+    color: var(--1, #333);
+    text-align: center;
+    font-family: Pretendard;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.5rem; /* 200% */
+}
+
+/* 지원구간 경곗값 */
+#boundary-value-title{
+    margin: 10rem 28rem 2.25rem 0;
+    color: var(--1, #333);
+    font-family: Pretendard;
+    font-size: 1.5625rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.center-table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table{
+    width: 100%;
+}
+
+th, td {
+    padding: 1rem 5rem;
+    text-align: center;
+    color: var(--1, #333);
+    font-family: Pretendard;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* 소득구간 주의사항 */
+.boundary-value-precautions{
+    color: var(--unnamed, #FF7474);
+    margin: 4rem 18rem 0 4.25rem
+}
+
+.boundary-value-precautions > p{
+    margin: 0;
+    font-family: Pretendard;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 118.5%; /* 1.185rem */
+}
+
+/* 기준중위소득 */
+.median-income-wrap{
+    margin-top: 7.5rem;
+}
+
+.median-income-title{
+    color: var(--1, #333);
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 1.88rem;
+    margin-left: 5rem;
+}
+
+.median-income-contents{
+    margin-left: 3.88rem;
+    margin-bottom: 5.94rem;
+}
+
+.median-income-contents > p{
+    margin: 0;
+    color: var(--1, #333);
+    font-family: Pretendard;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin: 0.3rem;
 }
