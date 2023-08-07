@@ -1,0 +1,182 @@
+/* 혜택 더보기 section */
+.benefitPlus-wrap {
+    background-color: var(--3, #B2EDFF);
+    height: 26.8125rem;
+    width: 100%;
+}
+
+#benefitPlus {
+    width: 12.375rem;
+    height: 3.125rem;
+    flex-shrink: 0;
+    background-color: var(--1, #00C2FF);
+    margin-left: 27.5rem;
+    border-radius: 0 0 0.7rem 0.7rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#benefitPlus>span {
+    color: var(--unnamed, rgba(255, 255, 255, 0.95));
+    font-family: Pretendard;
+    font-size: 1.5625rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#benefitPlus-img img {
+    width: 18.875rem;
+    height: 15.25rem;
+    flex-shrink: 0;
+    margin: 4.25rem 7rem 0 27vw;
+}
+
+.benefitPlus-contents {
+    display: flex;
+}
+
+#benefitPlus-content {
+    margin-top: 1.13rem;
+}
+
+#benefit-content-main>p {
+    color: var(--1, #333);
+    font-family: Pretendard;
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.benefit-list p {
+    margin: 0.5rem 0 0;
+    color: var(--1, #333);
+    font-family: Pretendard;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+#tongtong-3 {
+    margin-bottom: 0.75rem;
+    color: var(--1, #333);
+    font-family: Pretendard;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.benefit-warn>p {
+    color: #E43F3F;
+    font-family: Pretendard;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+/* 오늘 마감 section */
+.today-deadline {
+    height: 60.05rem
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 1.17rem
+}
+
+.image-wrapper {
+    position: relative;
+}
+
+.first-image {
+    width: 25.22919rem;
+    height: 19.25rem;
+    margin-top: 23.38rem;
+    background: white;
+}
+
+.second-image {
+    position: absolute;
+    z-index: -1;
+    margin-left: -15rem;
+    width: 28.59294rem;
+    height: 28.40481rem;
+    margin-top: 10rem;
+}
+
+.third-image {
+    position: absolute;
+    bottom: 0;
+    right: 0.58rem;
+    z-index: 2;
+    margin-bottom: 0.58rem;
+}
+
+.today-deadline-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--1, #333);
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.875rem; /* 150% */    
+}
+
+#today-deadline-content{
+    font-size: 1rem;
+    font-weight: 300;
+    width: 32.08331rem;
+    height: 6.70831rem;
+}
+
+/* 신규혜택 홍보 */
+
+#new-benefit-title{
+    height: 3.4375rem;
+    flex-shrink: 0;
+    background: var(--1, #00C2FF);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--unnamed, rgba(255, 255, 255, 0.95));
+    font-family: Pretendard;
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.new-benefit-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.new-benefit-box{
+    width: 26.875rem;
+    height: 29.875rem;
+    flex-shrink: 0;
+    border-radius: 0.625rem;
+    background: var(--5, #F1F1F1);
+    box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.15);
+}
+
+#new-benefit-centerBox{
+    margin: 5.88rem 7.5rem 7.5rem;
+}
