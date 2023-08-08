@@ -110,6 +110,14 @@ html{
     background: white;
 }
 
+.zero-image{
+    position: absolute;
+    left: -19rem;
+    top: 10rem;
+    width: 15.42831rem;
+    height: 16.75rem;
+}
+
 .second-image {
     position: absolute;
     z-index: -1;
