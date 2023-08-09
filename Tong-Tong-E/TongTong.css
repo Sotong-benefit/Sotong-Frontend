@@ -7,8 +7,9 @@ html {
     border-radius: 0.625rem;
     background: var(--5, #F1F1F1);
     box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.15);
-    width: 11.75rem;
-    height: 3.375rem;
+    padding: 0.5rem 0.5rem;
+    height: auto;
+    width: auto;
     flex-shrink: 0;
     display: flex;
     align-items: center;
@@ -40,6 +41,7 @@ html {
 }
 
 /* 혜택 인증하고 통통이 받기 */
+
 .screenShot-container {
     display: flex;
     justify-content: center;
@@ -88,7 +90,7 @@ html {
     display: flex;
     flex-direction: row;
     width: 37.875rem;
-    height: 15.9375rem;
+    height: auto;
     flex-shrink: 0;
 }
 
@@ -108,6 +110,7 @@ html {
     gap: 0;
     /* 요소 간격 조절 */
     margin-left: 8rem;
+    
 }
 
 .message {
@@ -257,6 +260,7 @@ html {
 .TongTong-benefit-container {
     text-align: center;
     margin-top: 7.5rem;
+    height: auto;
 }
 
 .TongTong-benefit-container>p {
@@ -276,11 +280,11 @@ html {
     justify-content: center;
     flex-direction: row;
     gap: 5.75rem;
+    height: auto;
 }
 
 .benefit-item {
     width: 25.25rem;
-    height: 27.8125rem;
     flex-shrink: 0;
     background-color: var(--5, #F1F1F1);
     filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.15));
