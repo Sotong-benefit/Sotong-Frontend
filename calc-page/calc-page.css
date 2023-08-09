@@ -93,6 +93,10 @@
     background: var(--unnamed, rgba(255, 255, 255, 0.95));
 }
 
+.option-btn.active {
+    background: var(--4, #CECECE);
+}
+
 .option1-info{
     margin-top:1.69rem;
     margin-left:10rem;

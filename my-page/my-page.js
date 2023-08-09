@@ -1,5 +1,3 @@
-// calc-res-page.js
-
 const resultValue = parseInt(document.querySelector('.result').textContent);
 
 const resSection = document.querySelector('.res-section');
