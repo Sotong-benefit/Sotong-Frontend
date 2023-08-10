@@ -10,12 +10,6 @@ html{
 }
 
 #benefitPlus {
-    width: 12.375rem;
-    height: 3.125rem;
-    flex-shrink: 0;
-    background-color: var(--1, #00C2FF);
-    margin-left: 27.5rem;
-    border-radius: 0 0 0.7rem 0.7rem;
     text-align: center;
     display: flex;
     align-items: center;
@@ -23,6 +17,12 @@ html{
 }
 
 #benefitPlus>span {
+    margin-right: 40rem;
+    padding: 0.5rem;
+    width: 12.375rem;
+    flex-shrink: 0;
+    background-color: var(--1, #00C2FF);
+    border-radius: 0 0 0.7rem 0.7rem;
     color: var(--unnamed, rgba(255, 255, 255, 0.95));
     font-family: Pretendard;
     font-size: 1.5625rem;
@@ -37,11 +37,12 @@ html{
     width: 18.875rem;
     height: 15.25rem;
     flex-shrink: 0;
-    margin: 4.25rem 7rem 0 27vw;
+    margin: 4.25rem 7rem 0 0;
 }
 
 .benefitPlus-contents {
     display: flex;
+    justify-content: center;
 }
 
 #benefitPlus-content {
