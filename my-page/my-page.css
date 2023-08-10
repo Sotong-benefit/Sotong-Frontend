@@ -360,6 +360,10 @@
     background: #CECECE;
 }
 
+.act-content:hover{
+    cursor:pointer;
+}
+
 .star>img{
     width: 2rem;
     height: 2rem;
@@ -592,6 +596,10 @@ line-height: normal;
 
     background: var(--5, #F1F1F1);
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.10);
+}
+
+.post-content:hover{
+    cursor:pointer;
 }
 
 .post-title{

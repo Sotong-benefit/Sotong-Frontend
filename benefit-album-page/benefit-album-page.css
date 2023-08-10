@@ -461,6 +461,10 @@ line-height: normal;
     background: #CECECE;
 }
 
+.act-content:hover{
+    cursor: pointer;
+}
+
 .star>img{
     width: 2rem;
     height: 2rem;

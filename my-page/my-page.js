@@ -52,3 +52,20 @@ for (let i = 0; i < starContainers.length; i++) {
     });
 }
 
+
+function myPostDetail(){ //내가 쓴 글 상세
+    window.location.href = '#'; 
+}
+
+
+function postDetail(){ //관심 글 상세
+    window.location.href = '#'; 
+}
+
+function actDetail(){ //혜택 추천 상세
+    window.location.href = '#';
+}
+
+function showMore(){ //더보기
+    window.location.href='/benefit-album-page/benefit-album-page.html';
+}

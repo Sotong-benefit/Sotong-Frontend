@@ -98,3 +98,10 @@ function toggleTag(button) {
     }
 }
 
+function moveToList() { //앨범형으로 이동
+    window.location.href = '/benefit-list-page/benefit-list-page.html';
+}
+
+function datailAct() { //활동 상세정보로 이동
+    window.location.href = '#';
+}

@@ -337,6 +337,10 @@ line-height: normal;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.10);
 }
 
+.post-content:hover{
+    cursor:pointer;
+}
+
 .star>img{
     width:2.25rem;
     height: 2.25rem;

@@ -54,3 +54,20 @@ for (let i = 0; i < starContainers.length; i++) {
     });
 }
 
+
+function showAlert() { //저장버튼
+    alert("저장되었습니다.");
+}
+
+function showMore() { //더보기버튼
+    window.location.href = '/benefit-album-page/benefit-album-page.html';
+}
+
+function actDetail() { //복지혜택 추천 상세
+    window.location.href = '#'; 
+}
+
+
+function postDetail() { //게시글추천 상세
+    window.location.href = '#'; 
+}

@@ -83,3 +83,10 @@ function toggleTag(button) {
     }
 }
 
+function writePost() { //글쓰기 버튼
+    window.location.href = '#'; 
+}
+
+function postDetail(){ //게시글상세
+    window.location.href = '#'; 
+}

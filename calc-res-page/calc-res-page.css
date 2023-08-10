@@ -546,6 +546,10 @@ height: 1.625rem;
     background: #CECECE;
 }
 
+.act-content:hover{
+    cursor:pointer;
+}
+
 .star>img{
     width: 2rem;
     height: 2rem;
@@ -739,10 +743,11 @@ line-height: normal;
 .post-content{
     display:flex;
     flex-direction: row;
+    position:relative;
+
     
-    gap:15rem;
+    gap:20rem;
     padding-left:4.5rem;
-    padding-right:4.06rem;
     margin-bottom:2rem;
     margin-left:2.62rem;
 
@@ -755,7 +760,6 @@ line-height: normal;
 }
 
 .post-title{
-    width: 150px;
     display:flex;
     justify-content: flex-start;
     align-items: center;
@@ -766,6 +770,10 @@ line-height: normal;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+
+    position: absolute;
+    top: 2rem;
+    left: 4.5rem;
 }
 
 .post-info-container{
@@ -781,13 +789,20 @@ line-height: normal;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+
+    position: absolute;
+    right: 4.06rem;
+    top: 1rem;
 }
 
 .post-info1{
-    width: 150px;
     text-align: right;
 }
 
 .post-info2{
     text-align: right;
+}
+
+.post-content:hover{
+    cursor: pointer;
 }

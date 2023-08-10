@@ -73,7 +73,7 @@
 
 
         <div class="opt">
-            <button class="post">글쓰기&nbsp;<img src="/public/images/Group186.png" alt=""></button>
+            <button class="post" onclick="writePost()">글쓰기&nbsp;<img src="/public/images/Group186.png" alt=""></button>
             <div class="radio-btn">
                 <div class="radio1" onclick="changeImage('radio1')" ><img src="/public/images/Ellipse 10.png" alt="">&nbsp;&nbsp;내가 쓴 글</div>
                 <div class="radio2" onclick="changeImage('radio2')"><img src="/public/images/Ellipse 10.png" alt="">&nbsp;&nbsp;내 관심글</div>
@@ -87,8 +87,9 @@
             </div>
         </div>
 
-        <div class="my-post">
-            <div class="post-content">
+        <div class="my-post"> 
+            
+            <div class="post-content" onclick="postDetail()"> <!--post-content부분 반복-->
                 <div class="star"><img src="/public/images/Star7.png" class="starImage"></div>
                 <div class="post-title">가나다라마바사아자차카타파하</div>
                 <div class="post-info-container">
@@ -96,17 +97,8 @@
                     <div class="post-info2">-이이이이이이이이이이이이이</div>
                 </div>
             </div>
-        </div>
+            
 
-        <div class="my-post">
-            <div class="post-content">
-                <div class="star"><img src="/public/images/Star7.png" class="starImage"></div>
-                <div class="post-title">가나다라마바사아자차카타파하</div>
-                <div class="post-info-container">
-                    <div class="post-info1">-작성내용 관련 태그/작성일</div>
-                    <div class="post-info2">-이이이이이이이이이이이이이</div>
-                </div>
-            </div>
         </div>
 
             

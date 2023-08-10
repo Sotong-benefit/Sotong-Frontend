@@ -91,3 +91,10 @@ function toggleTag(button) {
     }
 }
 
+function moveToAlbum() { //앨범형으로 이동
+    window.location.href = '/benefit-album-page/benefit-album-page.html';
+}
+
+function moveDetailPost() { //게시글 내용으로 이동
+    window.location.href = '#';
+}
