@@ -96,5 +96,5 @@ function moveToAlbum() { //앨범형으로 이동
 }
 
 function moveDetailPost() { //게시글 내용으로 이동
-    window.location.href = '#';
+    window.location.href = '/Bulletin-pages/Post-content/Bulletin-post-content.html';
 }

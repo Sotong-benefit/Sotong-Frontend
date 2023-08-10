@@ -54,16 +54,16 @@ for (let i = 0; i < starContainers.length; i++) {
 
 
 function myPostDetail(){ //내가 쓴 글 상세
-    window.location.href = '#'; 
+    window.location.href = '/Bulletin-pages/MyPost/Bulletin-MyPost.html'; 
 }
 
 
 function postDetail(){ //관심 글 상세
-    window.location.href = '#'; 
+    window.location.href = '/Bulletin-pages/Post-content/Bulletin-post-content.html'; 
 }
 
 function actDetail(){ //혜택 추천 상세
-    window.location.href = '#';
+    window.location.href = '/find-benefit-detail/find-benefit-bulletin.html';
 }
 
 function showMore(){ //더보기

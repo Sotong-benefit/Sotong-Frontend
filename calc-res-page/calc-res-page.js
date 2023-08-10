@@ -64,10 +64,10 @@ function showMore() { //더보기버튼
 }
 
 function actDetail() { //복지혜택 추천 상세
-    window.location.href = '#'; 
+    window.location.href = '/find-benefit-detail/find-benefit-bulletin.html'; 
 }
 
 
 function postDetail() { //게시글추천 상세
-    window.location.href = '#'; 
+    window.location.href = '/Bulletin-pages/Post-content/Bulletin-post-content.html'; 
 }
