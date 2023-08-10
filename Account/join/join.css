@@ -5,14 +5,27 @@ body {
     padding: 0;
 }
 
+.container-wrap{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-logo-container{
+    margin-bottom: 2rem;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
 .main-logo{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.main-logo img{
-    margin-top: 35.25rem;
+.main-logo-container img{
+    margin-top: 15rem;
     margin-bottom: 5.72rem;
     width: 34.875rem;
     height: 21.84206rem;
@@ -50,6 +63,7 @@ input{
     line-height: normal;
     border-radius: 1.25rem;
     border: 2px solid var(--5, #CECECE);
+    text-indent: 2rem;
 }
 
 input::placeholder {
@@ -65,7 +79,7 @@ input:focus{
     outline: none;
 }
 
-button{
+#join_submitbtn{
     width: 15.125rem;
     height: 3.4375rem;
     flex-shrink: 0;

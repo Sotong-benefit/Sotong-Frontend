@@ -27,6 +27,12 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
+<style>
+    a {
+        text-decoration: none;
+    }
+</style>
+
 <body>
     <!-- 반응형 container -->
     <div class="container-fluid" style="padding: 0;">
@@ -34,28 +40,38 @@
         <!-- 메인 프레임 header -->
         <header>
             <div class="main-header">
-                <img src="/public/images/main-logo.svg" class="main-logo">
+                <a href="/main-pages/main-page.html"><img src="/public/images/main-logo.svg" class="main-logo"></a>
                 <div class="myInfo-wrap">
                     <div class="myInfo-sec" style="margin-top: 0.5rem;">
                         <div><img src="/public/images/myInfo-img.svg" class="myInfo-logo-img">
                         </div>
-                        <div class="myInfo-info-letter" id="myInfo-UserName">통통이</div>
+                        <div class="myInfo-info-letter" id="myInfo-UserName"><a href="/Tong-Tong-E/TongTong.html"
+                                style="color:#848484;" >통통이</a></div>
                     </div>
                     <img src="/public/images/horizontal-line.svg">
                     <div style="margin-top: 0.5rem;">
-                        <div class="myInfo-info-letter" id="myInfo-myInformation">내정보</div>
+                        <div class="myInfo-info-letter" id="myInfo-myInformation"><a href="/Tong-Tong-E/TongTong.html"
+                            style="color:#848484;" >내정보</a></div>
                     </div>
                 </div>
             </div>
 
             <nav class="main-nav">
-                <p class="main-nav-letter" id="main-page-link" style="color: var(--1, #00C2FF);">메인</p>
+                <a href="/main-pages/main-page.html">
+                    <p class="main-nav-letter" id="main-page-link" style="color: var(--1, #00C2FF);">메인</p>
+                </a>
                 <img src="/public/images/horizontal-line.svg">
-                <p class="main-nav-letter" id="calc-page-link">소득분위 모의 계산기</p>
+                <a href="#">
+                    <p class="main-nav-letter" id="calc-page-link">소득분위 모의 계산기</p>
+                </a>
                 <img src="/public/images/horizontal-line.svg">
-                <p class="main-nav-letter" id="benefit-page-link">혜택 찾아보기</p>
+                <a href="#">
+                    <p class="main-nav-letter" id="benefit-page-link">혜택 찾아보기</p>
+                </a>
                 <img src="/public/images/horizontal-line.svg">
-                <p class="main-nav-letter" id="community-page-link">커뮤니티</p>
+                <a href="#">
+                    <p class="main-nav-letter" id="community-page-link">커뮤니티</p>
+                </a>
             </nav>
         </header>
         <!-- 메인 프레임 header끝 -->
@@ -95,12 +111,14 @@
             <div>
                 <div></div>
                 <div class="image-container">
-                    <div class="image-wrapper">
-                        <img src="/public/images/Dont-missIt.svg" class="zero-image">
-                        <img src="/public/images/main-page-multiChild.png" class="first-image">
-                        <img src="/public/images/mainpage-multichild-bcircle.svg" class="second-image">
-                        <img src="/public/images/main-page-deadline-Dday.svg" class="third-image">
-                    </div>
+                    <a href="#">
+                        <div class="image-wrapper">
+                            <img src="/public/images/Dont-missIt.svg" class="zero-image">
+                            <img src="/public/images/main-page-multiChild.png" class="first-image">
+                            <img src="/public/images/mainpage-multichild-bcircle.svg" class="second-image">
+                            <img src="/public/images/main-page-deadline-Dday.svg" class="third-image">
+                        </div>
+                    </a>
                 </div>
                 <div class="today-deadline-content">
                     <div id="today-deadline-title">다자녀 국가 장학금</div>
@@ -125,7 +143,8 @@
                             </div>
                             <div class="discover">
                                 <span class="discover-btn block"></span>
-                                <span class="discover-txt block">EXPLORE</span>
+                                <!-- 아래 태그에 글씨 삽입 가능 -->
+                                <span class="discover-txt block"></span>
                             </div>
                         </a>
                         <div class="v-story-desc-list">
@@ -140,7 +159,7 @@
                             </div>
                             <div class="discover">
                                 <span class="discover-btn block"></span>
-                                <span class="discover-txt block">EXPLORE</span>
+                                <span class="discover-txt block"></span>
                             </div>
                         </a>
                         <div class="v-story-desc-list">
@@ -155,7 +174,7 @@
                             </div>
                             <div class="discover">
                                 <span class="discover-btn block"></span>
-                                <span class="discover-txt block">EXPLORE</span>
+                                <span class="discover-txt block"></span>
                             </div>
                         </a>
                         <div class="v-story-desc-list">
@@ -170,7 +189,7 @@
                             </div>
                             <div class="discover">
                                 <span class="discover-btn block"></span>
-                                <span class="discover-txt block">EXPLORE</span>
+                                <span class="discover-txt block"></span>
                             </div>
                         </a>
                         <div class="v-story-desc-list">
@@ -199,10 +218,12 @@
             <!-- 신규혜택 보러가기 -->
             <div class="view-newBenefits-wrap">
                 <div class="view-newBenefits">
-                    <p>지금바로</p>
-                    <span>신규 혜택 보러가기!</span>
-                    <span style="align-items: flex-end;"><img src="/public/images/view-newBenefit-vector.svg"
-                            class="image-right-center"></span>
+                    <a href="#">
+                        <p>지금바로</p>
+                        <span>신규 혜택 보러가기!</span>
+                        <span style="align-items: flex-end;"><img src="/public/images/view-newBenefit-vector.svg"
+                                class="image-right-center"></span>
+                    </a>
                 </div>
             </div>
 

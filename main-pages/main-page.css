@@ -550,6 +550,12 @@ html {
     }
 }
 
+a > .view-newBenefits-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* 신규혜택 보러가기 */
 .view-newBenefits-wrap {
     display: flex;

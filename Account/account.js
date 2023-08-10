@@ -11,10 +11,10 @@ function togglePasswordVisibility() {
     
     if (passwordField.type === "password") {
       passwordField.type = "text";
-      toggleImage1.src = "/images/pwd-toggle-hide.svg";
+      toggleImage1.src = "/public/images/pwd-toggle-hide.svg";
     } else {
       passwordField.type = "password";
-      toggleImage1.src = "/images/pwd-toggle-show.svg";
+      toggleImage1.src = "/public/images/pwd-toggle-show.svg";
     }
   }
   
@@ -24,9 +24,9 @@ function togglePasswordCheckVisibility() {
   
   if (passwordCkField.type === "password") {
     passwordCkField.type = "text";
-    toggleImage2.src = "/images/pwd-toggle-hide.svg";
+    toggleImage2.src = "/public/images/pwd-toggle-hide.svg";
   } else {
     passwordCkField.type = "password";
-    toggleImage2.src = "/images/pwd-toggle-show.svg";
+    toggleImage2.src = "/public/images/pwd-toggle-show.svg";
   }
 }
