@@ -7,11 +7,11 @@
     <meta charset="UTF-8">
     <meta name="viewport"
         content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
-    <title>community-main-page</title>
+    <title>benefit-list-page</title>
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
     <link rel="stylesheet" type="text/css" href="/main-frame/main-frame.css">
-    <link rel="stylesheet" type="text/css" href="/community-main-page/community-main-page.css">
+    <link rel="stylesheet" type="text/css" href="/benefit-list-page/benefit-list-page.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
@@ -44,9 +44,9 @@
                 <img src="/public/images/horizontal-line.svg">
                 <p class="main-nav-letter" id="calc-page-link" >소득분위 모의 계산기</p>
                 <img src="/public/images/horizontal-line.svg">
-                <p class="main-nav-letter"id="benefit-page-link"  style="color:#00C2FF">혜택 찾아보기</p>
+                <p class="main-nav-letter"id="benefit-page-link" style="color:#00C2FF">혜택 찾아보기</p>
                 <img src="/public/images/horizontal-line.svg">
-                <p  class="main-nav-letter"id="community-page-link" >커뮤니티</p>
+                <p  class="main-nav-letter"id="community-page-link">커뮤니티</p>
             </nav>
         </header>
         <!-- 메인 프레임 header끝 -->
@@ -73,48 +73,59 @@
 
 
         <div class="opt">
-            <button class="post">글쓰기&nbsp;<img src="/public/images/Group186.png" alt=""></button>
+            <div class="post-num">총, <span>1000</span>개</div>
             <div class="radio-btn">
-                <div class="radio1" onclick="changeImage('radio1')" ><img src="/public/images/Ellipse 10.png" alt="">&nbsp;&nbsp;내가 쓴 글</div>
-                <div class="radio2" onclick="changeImage('radio2')"><img src="/public/images/Ellipse 10.png" alt="">&nbsp;&nbsp;내 관심글</div>
+                <div class="radio1" onclick="changeImage('radio1')" ><img src="/public/images/Ellipse 10.png" alt="">&nbsp;&nbsp;종료 임박순</div>
+                <div class="radio2" onclick="changeImage('radio2')"><img src="/public/images/Ellipse 10.png" alt="">&nbsp;&nbsp;인기순</div>
+                <div class="radio3" onclick="changeImage('radio3')" ><img src="/public/images/Ellipse 10.png" alt="">&nbsp;&nbsp;최신순</div>
             </div>
         </div>
 
         <div class="idx">
             <div class="idx-content">
-                <div class="index1">제목</div>
-                <div class="index2">작성정보</div>
+                <div class="index1">
+                    <div class="album-icon"><img src="/public/images/album.png" alt=""></div>
+                    <div class="album-info">앨범형<br>보기</div>
+                </div>
+                <div class="index2">
+                    <div class="album-icon"><img src="/public/images/blue-vector.png" alt=""></div>
+                    <div class="album-info">목록형<br>보기</div>
+                </div>
             </div>
         </div>
 
-        <div class="my-post">
+        <div class="my-post"><!--my-post부분 반복-->
             <div class="post-content">
+                <div class="deadline">D-11</div>
+                <div class="con">모두</div>
                 <div class="star"><img src="/public/images/Star7.png" class="starImage"></div>
-                <div class="post-title">가나다라마바사아자차카타파하</div>
+                <div class="post-title">소득연계형 국가장학금</div>
+                <div class="post-tag">#국가장학금</div>
                 <div class="post-info-container">
-                    <div class="post-info1">-작성내용 관련 태그/작성일</div>
-                    <div class="post-info2">-이이이이이이이이이이이이이</div>
+                    <div class="post-info1">신청 : 2023.08.01~2023.08.02</div>
+                    <div class="post-info2">진행 : 2023.08.03~2023.08.04</div>
                 </div>
             </div>
         </div>
 
         <div class="my-post">
             <div class="post-content">
+                <div class="deadline">D-11</div>
+                <div class="con">모두</div>
                 <div class="star"><img src="/public/images/Star7.png" class="starImage"></div>
-                <div class="post-title">가나다라마바사아자차카타파하</div>
+                <div class="post-title">소득연계형 국가장학금</div>
+                <div class="post-tag">#국가장학금</div>
                 <div class="post-info-container">
-                    <div class="post-info1">-작성내용 관련 태그/작성일</div>
-                    <div class="post-info2">-이이이이이이이이이이이이이</div>
+                    <div class="post-info1">신청 : 2023.08.01~2023.08.02</div>
+                    <div class="post-info2">진행 : 2023.08.03~2023.08.04</div>
                 </div>
             </div>
         </div>
-
-            
 
         </section>
     </div>
     <!-- 반응형 container 끝 -->
-    <script src="communitiy-main-page.js"></script>
+    <script src="benefit-list-page.js"></script>
 </body>
 
 </html>

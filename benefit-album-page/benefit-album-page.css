@@ -198,8 +198,8 @@ line-height: normal;
     justify-content:center;
     align-items:center;
     flex-direction:row;
-    gap:37.56rem;
-    margin-top:4.69rem;
+    gap:20.56rem;
+    margin-top:5rem;
 }
 
 .radio-btn{
@@ -207,9 +207,8 @@ line-height: normal;
     justify-content:center;
     align-items:center;
     flex-direction:row;
-    gap:1rem;
+    gap:4.63rem;
 }
-
 
 .post{
     width: 6.8125rem;
@@ -234,14 +233,14 @@ line-height: normal;
 
 .radio1{
     color: var(--2, #434343);
-font-family: Pretendard;
-font-size: 1.25rem;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+    font-family: Pretendard;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
-.radio1, .radio2:hover{
+.radio1, .radio2, .radio3, .radio4:hover{
     cursor:pointer;
 }
 
@@ -249,6 +248,14 @@ line-height: normal;
     width:1.125rem;
     height: 1.125rem;
 }.radio1>img{
+    width:1.125rem;
+    height: 1.125rem;
+}
+.radio3>img{
+    width:1.125rem;
+    height: 1.125rem;
+}
+.radio4>img{
     width:1.125rem;
     height: 1.125rem;
 }
@@ -261,33 +268,165 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 }
-
-/*목록*/
-.idx{
-    background: var(--3, #B2EDFF);
-    height:1.625rem;
-    margin-bottom:2rem;
+.radio3{
+    color: var(--2, #434343);
+font-family: Pretendard;
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.radio4{
+    color: var(--2, #434343);
+font-family: Pretendard;
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
 }
 
-.idx-content{
-    gap:29.88rem;
+/*앨범형보기*/
+.idx{
     display:flex;
     justify-content:center;
     align-items:center;
-    margin-top:1.12rem;
+    
+}
+
+.idx-content{
+    display: flex;
+    flex-direction: row;
+    gap: 1.82rem;
+    margin-top: 3.5rem;
+    margin-left:55rem;
+    margin-bottom: 5rem;
+    color: var(--2, #434343);
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.album-icon{
+    margin-bottom: 0.3rem;
 }
 
 .index1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+.index2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.index1, .index2:hover{
+    cursor: pointer;
+}
+
+/*post*/
+/*내 관심 혜택*/
+.recommend{
     display:flex;
     justify-content: center;
-    align-items:center;
-    width: 3.75rem;
-    height: 1.625rem;
+    align-items: center;
+}
+
+.reco{
+    position:relative;
+    width: 56.25rem;
+    height: 30rem;
     flex-shrink: 0;
-    background: var(--1, #00C2FF);
+    margin-top: 3.5rem;
+    margin-left: 31.87rem;
+    margin-right: 31.87rem;
+    
+}
+
+.my-reco-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:7.5rem;
+    margin-right: 45rem;
+
+    color: #000;
+    font-family: Pretendard;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.reco-num{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.625rem;
+    height: 3.5625rem;
+    flex-shrink: 0;
+    background:#00c2ff;
+    margin-left: 4rem;
+
+    border-radius: 0 0 0.625rem 0.625rem;
+    color: var(--unnamed, rgba(255, 255, 255, 0.95));
+    font-family: Pretendard;    
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.reco-name{
+    margin-left: 1rem;
+    display:flex;
+    align-items: center;
+
+    color: var(--1, #333);  
+    font-family: Pretendard;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 171.597%; /* 2.14494rem */
+    
+}
+
+.activity{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8.31rem;
+    margin-left:2.5rem;
+    margin-right: 2.44rem;
+}
+
+
+
+.act-idx{
+    display:flex;
+    flex-direction:row;
+    gap: 0.5rem;
+}
+
+.deadline{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.375rem;
+    height: 1.75rem;
+    flex-shrink: 0;
+    background:#00C2FF;
+    border-radius: 0.1875rem 0.1875rem 0 0;
 
     color: var(--unnamed, rgba(255, 255, 255, 0.95));
-    text-align: center;
     font-family: Pretendard;
     font-size: 0.9375rem;
     font-style: normal;
@@ -295,102 +434,111 @@ line-height: normal;
     line-height: normal;
 }
 
-.index2{
+.act-sec{
     display:flex;
     justify-content: center;
-    align-items:center;
-    width: 4.5625rem;
-    height: 1.625rem;
-    flex-shrink: 0;
-background: var(--1, #00C2FF);
-
-color: var(--unnamed, rgba(255, 255, 255, 0.95));
-text-align: center;
-font-family: Pretendard;
-font-size: 0.9375rem;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-}
-
-
-/*게시글*/
-.my-post{
-    display:flex;
     align-items: center;
-    justify-content:center;
-    flex-direction:column;
+    width: 3.375rem;
+    height: 1.75rem;
+    flex-shrink: 0;
+    border-radius: 0.1875rem 0.1875rem 0 0;
+    background: #00c2ff;
+
+    color: var(--unnamed, rgba(255, 255, 255, 0.95));
+    font-family: Pretendard;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
 
-.post-content{
-    display:flex;
-    flex-direction: row;
-    position:relative;
-
-    margin-bottom:2rem;
-
-    width: 56.25rem;
-    height: 5.4375rem;
+.act-content{
+    position: relative;
+    padding-left:1.25rem;
+    width: 15.0625rem;
+    height: 25.3125rem ;
     flex-shrink: 0;
-
-    background: var(--5, #F1F1F1);
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.10);
+    background: #CECECE;
 }
 
 .star>img{
-    width:2.25rem;
-    height: 2.25rem;
+    width: 2rem;
+    height: 2rem;
 }
 
 .star{
     position: absolute;
-    top: 1.63rem;
-    left: 2.5rem;
+    top: 0.5rem;
+    left: 12.31rem;
 }
 
 .star:hover{
-    cursor:pointer;
+    cursor: pointer;
 }
 
-.post-title{
-    position: absolute;
-    top: 2rem;
-    left: 6rem;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+.act-img{
+    width: 12.5625rem;
+    height: 16.1875rem;
+    flex-shrink: 0;
+}
+
+.act-content>img{
+    margin-top:1rem;
+    margin-bottom: 0.5rem;
+    margin-right:1.25rem;
+    border-radius: 0.625rem;
+    width: 12.5625rem;
+    height: 16.1875rem;
+}
+
+.act-name{
     color: var(--1, #333);
-    text-align: center;
     font-family: Pretendard;
-    font-size: 1.25rem;
+    font-size: 0.9375rem;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
 }
 
-.post-info-container{
-    position: absolute;
-    right: 4.48rem;
-    top: 1.5rem;
+.act-tag{
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align:right;
+    padding-left: 0.3rem;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 0.25rem;
+    width: 12.5625rem;
+    height: 2rem;
+    flex-shrink: 0;
+    background:#FFFFFFF1;
+    border-radius:0.3rem;
 
+    color: #333;
+font-family: Pretendard;
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.act-info1{
+    height:auto;
+    margin-top:1rem;
     color: var(--1, #333);
-    text-align: center;
     font-family: Pretendard;
-    font-size: 1.25rem;
+    font-size: 0.75rem;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 200;
     line-height: normal;
 }
 
-.post-info1{
-    text-align: right;
+.act-info2{
+    height:auto;
+    width:200px;
+    margin-top:0.5rem;
+    color: var(--1, #333);
+    font-family: Pretendard;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
 }
-
-.post-info2{
-    text-align: right;
-}
-

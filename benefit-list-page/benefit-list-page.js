@@ -15,14 +15,24 @@ for (let i = 0; i < starContainers.length; i++) {
 function changeImage(selectedRadio) {
     const radio1Img = document.getElementsByClassName("radio1")[0].getElementsByTagName("img")[0];
     const radio2Img = document.getElementsByClassName("radio2")[0].getElementsByTagName("img")[0];
+    const radio3Img = document.getElementsByClassName("radio3")[0].getElementsByTagName("img")[0];
 
     if (selectedRadio === "radio1") {
         radio1Img.src = "/public/images/Ellipse 11.png";
         radio2Img.src = "/public/images/Ellipse 10.png";
+        radio3Img.src = "/public/images/Ellipse 10.png";
+
     } else if (selectedRadio === "radio2") {
         radio1Img.src = "/public/images/Ellipse 10.png";
         radio2Img.src = "/public/images/Ellipse 11.png";
+        radio3Img.src = "/public/images/Ellipse 10.png";
+
+    }else if (selectedRadio === "radio3") {
+        radio1Img.src = "/public/images/Ellipse 10.png";
+        radio2Img.src = "/public/images/Ellipse 10.png";
+        radio3Img.src = "/public/images/Ellipse 11.png";
     }
+    
 }
 
 
@@ -58,8 +68,6 @@ function highlightButton(btnId) {
     // 선택된 버튼의 스타일 변경
     if (selectedButton) {
         selectedButton.style.boxShadow = "2px 2px 4px 0px rgba(0, 0, 0, 0.25) inset";
-        selectedButton.style.color = "#666666";
-        
     }
 }
 

@@ -179,11 +179,11 @@
     background: var(--5, #F1F1F1);
 
     color: var(--1, #333);
-font-family: Pretendard;
-font-size: 1.5625rem;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+    font-family: Pretendard;
+    font-size: 1.5625rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 
 .tag.selected {
@@ -198,8 +198,8 @@ line-height: normal;
     justify-content:center;
     align-items:center;
     flex-direction:row;
-    gap:37.56rem;
-    margin-top:4.69rem;
+    gap:29.56rem;
+    margin-top:5rem;
 }
 
 .radio-btn{
@@ -207,9 +207,8 @@ line-height: normal;
     justify-content:center;
     align-items:center;
     flex-direction:row;
-    gap:1rem;
+    gap:4.63rem;
 }
-
 
 .post{
     width: 6.8125rem;
@@ -234,14 +233,14 @@ line-height: normal;
 
 .radio1{
     color: var(--2, #434343);
-font-family: Pretendard;
-font-size: 1.25rem;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+    font-family: Pretendard;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
-.radio1, .radio2:hover{
+.radio1, .radio2, .radio3:hover{
     cursor:pointer;
 }
 
@@ -249,6 +248,14 @@ line-height: normal;
     width:1.125rem;
     height: 1.125rem;
 }.radio1>img{
+    width:1.125rem;
+    height: 1.125rem;
+}
+.radio3>img{
+    width:1.125rem;
+    height: 1.125rem;
+}
+.radio4>img{
     width:1.125rem;
     height: 1.125rem;
 }
@@ -261,60 +268,64 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 }
-
-/*목록*/
-.idx{
-    background: var(--3, #B2EDFF);
-    height:1.625rem;
-    margin-bottom:2rem;
+.radio3{
+    color: var(--2, #434343);
+font-family: Pretendard;
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
 }
 
-.idx-content{
-    gap:29.88rem;
+/*앨범형보기*/
+.idx{
     display:flex;
     justify-content:center;
     align-items:center;
-    margin-top:1.12rem;
+    
 }
 
-.index1{
-    display:flex;
-    justify-content: center;
-    align-items:center;
-    width: 3.75rem;
-    height: 1.625rem;
-    flex-shrink: 0;
-    background: var(--1, #00C2FF);
-
-    color: var(--unnamed, rgba(255, 255, 255, 0.95));
+.idx-content{
+    display: flex;
+    flex-direction: row;
+    gap: 1.82rem;
+    margin-top: 3.5rem;
+    margin-left:55rem;
+    margin-bottom: 6rem;
+    color: var(--2, #434343);
     text-align: center;
     font-family: Pretendard;
     font-size: 0.9375rem;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     line-height: normal;
 }
 
-.index2{
-    display:flex;
-    justify-content: center;
-    align-items:center;
-    width: 4.5625rem;
-    height: 1.625rem;
-    flex-shrink: 0;
-background: var(--1, #00C2FF);
-
-color: var(--unnamed, rgba(255, 255, 255, 0.95));
-text-align: center;
-font-family: Pretendard;
-font-size: 0.9375rem;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+.album-icon{
+    margin-bottom: 0.3rem;
 }
 
+.index1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+.index2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
 
-/*게시글*/
+.index1, .index2:hover{
+    cursor: pointer;
+}
+
+/*게시글목록*/
+
 .my-post{
     display:flex;
     align-items: center;
@@ -327,25 +338,25 @@ line-height: normal;
     flex-direction: row;
     position:relative;
 
-    margin-bottom:2rem;
+    margin-bottom:3.5rem;
 
     width: 56.25rem;
-    height: 5.4375rem;
+    height: 8.9375rem;
     flex-shrink: 0;
 
-    background: var(--5, #F1F1F1);
+    background: #F3F3F3;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.10);
 }
 
 .star>img{
-    width:2.25rem;
-    height: 2.25rem;
+    width:1.8rem;
+    height: 1.8rem;
 }
 
 .star{
     position: absolute;
-    top: 1.63rem;
-    left: 2.5rem;
+    top: 1rem;
+    right: 1rem;
 }
 
 .star:hover{
@@ -354,11 +365,29 @@ line-height: normal;
 
 .post-title{
     position: absolute;
-    top: 2rem;
-    left: 6rem;
+    top: 3.37rem;
+    left: 1.5rem;
     display:flex;
     justify-content: center;
     align-items: center;
+    color: var(--1, #333);
+    font-family: Pretendard;
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.post-info-container{
+    position: absolute;
+    right: 4.19rem;
+    top: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align:right;
+    gap: 0.5rem;
+
     color: var(--1, #333);
     text-align: center;
     font-family: Pretendard;
@@ -368,17 +397,55 @@ line-height: normal;
     line-height: normal;
 }
 
-.post-info-container{
-    position: absolute;
-    right: 4.48rem;
-    top: 1.5rem;
+.deadline{
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    text-align:right;
+    align-items:  center;
+    width: 3.375rem;
+    height: 1.75rem;
+    flex-shrink: 0;
+    border-radius: 0.1875rem;
+    background: var(--1, #00C2FF);
 
-    color: var(--1, #333);
-    text-align: center;
+    color: var(--unnamed, rgba(255, 255, 255, 0.95));
+    font-family: Pretendard;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+    position: absolute;
+    left: 0.5rem;
+    top: 0.5rem;
+}
+
+.con{
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    width: 3.375rem;
+    height: 1.75rem;
+    flex-shrink: 0;
+    border-radius: 0.1875rem;
+    background: var(--1, #00C2FF);
+
+    color: var(--unnamed, rgba(255, 255, 255, 0.95));
+    font-family: Pretendard;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+    position: absolute;
+    left: 4.37rem;
+    top: 0.5rem;
+}
+
+.post-tag{
+    position: absolute;
+    top:6.12rem;
+    left:1.5rem;
+    color: #333;
     font-family: Pretendard;
     font-size: 1.25rem;
     font-style: normal;
@@ -387,10 +454,9 @@ line-height: normal;
 }
 
 .post-info1{
-    text-align: right;
+    text-align: left;
 }
 
 .post-info2{
-    text-align: right;
+    text-align: left;
 }
-
