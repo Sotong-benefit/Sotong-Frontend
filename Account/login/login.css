@@ -5,14 +5,28 @@ body {
     padding: 0;
 }
 
+.container-wrap{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-logo-container{
+    margin-bottom: 2rem;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
 .main-logo{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
 }
 
-.main-logo img{
-    margin-top: 35.25rem;
+.main-logo-container img{
+    margin-top: 10rem;
     margin-bottom: 5.72rem;
     width: 34.875rem;
     height: 21.84206rem;
@@ -50,6 +64,7 @@ input{
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+    text-indent: 2rem;
 }
 
 input::placeholder {
@@ -61,7 +76,7 @@ input::placeholder {
     line-height: normal;
 }
 
-button{
+#login_submitbtn{
     width: 15.125rem;
     height: 3.4375rem;
     flex-shrink: 0;
