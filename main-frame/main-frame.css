@@ -1,27 +1,6 @@
 /* 메인 프레임 css 시작 */
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css");
 
-:root {
-    /* Colors */
-    --_1: #00c2ff;
-    --_2: #74deff;
-    --_3: #b2edff;
-    --_1: #333333;
-    --_2: #434343;
-    --_3: #848484;
-    --_4: #cecece;
-    --_5: #f1f1f1;
-    --: #77ff74;
-    --: #ff7474;
-    --: rgba(255, 255, 255, 0.95);
-    --: #ffd600;
-  
-    /* Fonts */
-  
-    /* Effects */
-    --inner-shadow-box-shadow: inset 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
-}
-
 a{
     text-decoration: none;
 }
