@@ -15,3 +15,15 @@
 # 메인프레임이 페이지마다 다른 경우가 존재하므로 템플릿언어로 묶으면 꼬일 가능성(주의 해야함)
 
 # 디자인 디테일 수정 필요
+
+# 파일명 - (피그마) 페이지 설명
+
+# main-frame(header+navbar 프레임 페이지) - 전체 프레임이 아님
+# main-pages - 메인 페이지
+# Account - 로그인 관련 페이지
+# Bulletin-pages(커뮤니티 게시글 작성 페이지)
+    1. MyPost - 게시글 내용 - 내가 쓴 글
+    2. Post-content - 게시글 내용
+    3. writing - 게시글 내용 -글쓰기
+# find-benefit-detail(혜택 찾아보기 게시글)
+# TongTongE (통통이 페이지)
