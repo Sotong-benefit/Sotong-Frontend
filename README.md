@@ -27,3 +27,9 @@
     3. writing - 게시글 내용 -글쓰기
 # find-benefit-detail(혜택 찾아보기 게시글)
 # TongTongE (통통이 페이지)
+# my-page(내정보)
+# calc-page(모의계산기)
+# calc-res-page(모의계산기 결과)
+# community-main-page(커뮤니티)
+# benefit-list-page(혜택 찾아보기 목록형)
+# benefit-album-page(혜택 찾아보기 앨범형)
