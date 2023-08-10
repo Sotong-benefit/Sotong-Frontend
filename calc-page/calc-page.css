@@ -1,3 +1,4 @@
+
 .calc{
     margin: 0 auto;
     display: flex;
@@ -91,6 +92,10 @@
     border-radius: 0.3125rem;
     border: none;
     background: var(--unnamed, rgba(255, 255, 255, 0.95));
+}
+
+.option-btn.active {
+    background: var(--4, #CECECE);
 }
 
 .option1-info{
@@ -343,6 +348,7 @@
     flex-shrink: 0;
     border-radius: 0.3125rem;
     background: var(--3, #B2EDFF);
+    text-decoration: none;
 
     color: var(--1, #333);
     font-family: Pretendard;
