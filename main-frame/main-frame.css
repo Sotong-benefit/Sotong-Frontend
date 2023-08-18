@@ -5,6 +5,11 @@ a{
     text-decoration: none;
 }
 
+html {
+   -webkit-text-size-adjust:none; 
+}
+
+
 @media screen and (max-width: 1680px) {
     *{
         margin: 0;
@@ -104,6 +109,7 @@ a{
         text-decoration: none;
         /* page 전체 크기 결정(rem) */
         font-size: 31%;
+
     }
 }
 
@@ -165,13 +171,16 @@ nav img{
 }
 
 .myInfo-info-letter{
+    margin: 0.25rem;
+}
+
+.myInfo-info-letter a{
     color: #848484;     
     font-family: Pretendard;
     font-size: 1.5625rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin: 0.25rem;
 }
 
 .main-nav-letter{

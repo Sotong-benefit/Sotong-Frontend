@@ -417,7 +417,9 @@ line-height: normal;
     flex-direction: column;
     text-align: right;
     gap: 0.5rem;
+}
 
+.post-info-container div{
     color: var(--1, #333);
     text-align: center;
     font-family: Pretendard;

@@ -201,7 +201,7 @@ hr{
 }
 
 /* 관련사이트 주소 */
-#detail-site-contents{
+#detail-site-contents p, #detail-site-contents a{
     color: var(--2, #434343);
     font-family: Pretendard;
     font-size: 1.5rem;

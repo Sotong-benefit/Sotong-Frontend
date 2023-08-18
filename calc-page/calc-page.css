@@ -101,6 +101,9 @@
 .option1-info{
     margin-top:1.69rem;
     margin-left:10rem;
+}
+
+.option1-info p{
     color: var(--2, #434343);
     font-family: Pretendard;
     font-size: 0.75rem;
@@ -141,6 +144,11 @@
     margin-top:2rem;
 }
 
+.option-title > img{
+    width: 0.5625rem;
+    height: 0.5625rem;
+    flex-shrink: 0;
+}
 
 .input3>.option-title{
     display: flex;
